@@ -80,7 +80,7 @@ examples = [
     "NVIDIA (NVDA) beats earnings and issues positive outlook."
 ]
 
-results = [extract_entities(x) for x in examples]
+results = [extract_entities(x) for x in examples] 
 ```
 
 ### Fetch Live News
@@ -90,7 +90,6 @@ results = [extract_entities(x) for x in examples]
 import os
 os.environ["NEWSAPI_KEY"] = "your_api_key_here"
 
-# Fetch and process recent news
 df_live = newsapi_ner_demo(
     query="earnings OR results OR guidance",
     page_size=20,
@@ -166,14 +165,6 @@ class NERResult:
 - [ ] Support for international stock exchanges
 - [ ] Real-time streaming data processing
 - [ ] Web API endpoint deployment
-
-## 📄 License
-
-This project is open source and available for educational and commercial use.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
 
 ## 📧 Contact
 
